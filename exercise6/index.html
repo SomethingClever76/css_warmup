@@ -1,15 +1,68 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+	<meta charset="utf-8">
 
-  <title>CSS Exercise 6</title>
+	<title>CSS Exercise 6</title>
 
-  <style>
-  	
-  </style>
+	<style>
+		.container {
+			height: 230px;
+			width: 350px;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.interior {
+			box-sizing: border-box;
+			border: 5px solid white;
+			height: 100px;
+			width: 100px;
+		}
+
+		.div1 {
+			position: relative;
+			background-color: red;
+			margin-left: 100px;
+		}
+
+		.div2 {
+			position: relative;
+			background-color: orange;
+			transform: rotate(-20deg);
+			left: 43px;
+			z-index: -2;
+		}
+
+		.div3 {
+			position: relative;
+			background-color: violet;
+			transform: rotate(20deg);
+			left: 45px;
+			bottom: 80px;
+			z-index: 1;
+		}
+
+		.div4 {
+			position: relative;
+			background-color: blue;
+			transform: rotate(30deg);
+			left: 20px;
+			bottom: 70px;
+		}
+
+		.div5 {
+			position: relative;
+			background-color: yellow;
+			transform: rotate(50deg);
+			bottom: 33px;
+			z-index: -1;
+		}
+	</style>
 </head>
+
 <body>
 	<!-- Do not touch the HTML please -->
 	<div class="container">
@@ -20,4 +73,5 @@
 		<div class="interior div5"></div>
 	</div>
 </body>
+
 </html>
